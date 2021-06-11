@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employement Form</title>
+	<meta name="description" content="Page Description Here">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		body{
+			font-size: 20px;
+			font-family: arial;
+			background-color: silver;
+			font-weight: bold;
+			margin-top: 15px;
+		}
+		table{
+			margin-left: 30%;
+		}
+		h1{
+			margin-left: 35%;
+		}
+		textarea{
+			font-size: 20px;
+ 		 	font-family: Arial;
+		}
+		input[type=text] {
+ 			background-color: #3CBC8D;
+ 		 	color: white;
+ 		 	font-size: 20px;
+ 		 	font-family: Arial;
+		}
+		input[type=radio], input[type=checkbox],input[type=submit], input[type=reset] {
+	        background-color: #4CAF50;
+	  		border: none;
+	  		color: black;
+	  		font-weight: bold;
+	  		padding: 16px 32px;
+	  		text-decoration: none;
+	  		margin: 4px 2px;
+	  		cursor: pointer;
+	  		font-size: 20px;
+		}
+		select {
+  		    width: 70%;
+  			padding: 8px 16px;
+  			border: none;
+  			border-radius: 4px;
+  			background-color: #f1f1f1;
+  			font-size: 20px;
+		}
+
+		td{
+			padding:  15px;
+		}
+
+		input[type=text]:focus, textarea:focus{
+  			background-color: lightblue;
+  			border: 3px solid #555;
+  			color: black;
+		}
+
+		input[type=submit]:hover, input[type=reset]:hover{
+			background-color: lightblue;
+			border: 3px solid black;
+			color: black;
+			font-weight: bold;
+		}
+
+
+	</style>
+</head>
+<body>
+	<form name="Employement" action="send.php" method="post">
+		<table width="800">
+			<h1><U>Employement Application</U></h1>
+
+			<tr>
+				<td>First Name</td>
+				<td><input type="text" name="fname" maxlength="50"></td>
+			</tr>
+
+			<tr>
+				<td>Last Name</td>
+				<td><input type="text" name="lname" maxlength="50"></td>
+			</tr>
+			
+			<tr>
+				<td>Position</td>
+				<td>
+					<select name="Position">
+
+					<option value="AC">Accountant</option>
+					<option value="RE">Reception</option>
+					<option value="AD">Administrator</option>
+					<option value="SU">Supervisor</option>
+
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Experience Level</td>
+				<td>
+					<select name="Experience">
+
+					<option value="EL">Entry Level</option>
+					<option value="SE">Some Experience</option>
+					<option value="VE">Very Experienced</option>
+
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Job Type</td>
+				<td>
+					
+					<input type="checkbox" name="ft">Full-time
+					<input type="checkbox" name="pt">Part-time
+					<input type="checkbox" name="ct">Contract
+
+				</td>
+			</tr>
+
+			<tr>
+				<td>Employee Status</td>
+				<td>
+					
+					<input type="radio" name="estatus" value="employed">Employed
+					<input type="radio" name="estatus" value="unemployed">Unemployed
+					<input type="radio" name="estatus" value="Student">Student
+					
+				</td>
+			</tr>
+
+			<tr>
+				<td>Additional Comments</td>
+				<td>
+					
+					<textarea name="Comments" cols="45" rows="5"></textarea>
+
+				</td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td>
+					
+					<input type="submit" name="submit" value="Submit">
+					<input type="reset" name="reset" value="Reset">
+
+				</td>
+			</tr>
+
+
+
+		</table>
+		
+	</form>
+
+</body>
+</html>
