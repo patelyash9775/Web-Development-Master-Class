@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Web Page</title>
+
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			line-height: 1.5em;
+		}	
+		#header{
+			background: black;
+			font-family: Arial;
+			height: 52px;
+		}
+		#contentwrapper{
+			float: left;
+			width: 100%;
+		}
+		#contentcolumn{
+			margin: 0 230px 0 230px;
+		}
+		#leftcolumn{
+			float: left;
+			width: 230px;
+			margin-left: -100%;
+			background: #24C8FF;
+		}
+		#rightcolumn{
+			float: left;
+			width: 230px;
+			margin-left: -230px;
+			background: #FFFB00;
+		}
+		.innertext{
+			margin: 20px;
+			font-family: Arial;
+			color: #5E5E5E;
+		}
+		#footer{
+			clear: left;
+			width: 100%;
+			background: black;
+			color: #FFF;
+			font-family: Arial;
+			text-align: center;
+			padding: 4px;
+		}
+
+		/* #### Navigation Bar #### */
+
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			background-color: #000;
+		}
+		li{
+			float: left;
+			border-right: 1px solid #bbb;
+		}
+		li:last-child{
+			border-right: none;
+		}
+		li a{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		li a:hover:not(.active){
+			background-color: #808080;
+		}
+		.active{
+			background-color: #0099ff;
+		}
+
+		/* #### Responsive layout CSS #### */
+
+		@media (max-width: 840px){
+
+			#leftcolumn{
+				margin-left: -100%;
+			}
+			#rightcolumn{
+				float: none;
+				width: 100%;
+				margin-left: 0;
+				clear: both;
+			}
+			#contentcolumn{
+				margin-right: 0;
+			}
+		}
+
+		@media (max-width: 600px){
+
+			#leftcolumn{
+				float: none;
+				width: 100%;
+				clear: both;
+				margin-left: 0;
+			}
+			#contentcolumn{
+				margin-left: 0;
+			}
+		}
+
+
+	</style>
+
+</head>
+<body>
+
+	<div id="container">
+
+		<div id="header">
+
+			<ul style="display: inline;">
+				<li><a class="active" href="#home">Home</a></li>
+				<li><a href="#news">About</a></li>
+				<li><a href="#contact">News</a></li>
+				<li><a href="#about">Contact</a></li>
+			</ul>
+			
+		</div>
+
+		<div id="contentwrapper">
+			
+			<div id="contentcolumn">
+
+				<div class="innertext">
+					
+					<b style="color: black; font-weight: bold;">Web Development</b> <br>Web development refers in general to the tasks associated with developing websites for hosting via intranet or internet. The web development process includes web design, web content development, client-side/server-side scripting and network security configuration, among other tasks.
+					<br>
+					In a broader sense, web development encompasses all the actions, updates, and operations required to build, maintain and manage a website to ensure its performance, user experience, and speed are optimal.
+					<br>
+					It might also, but not necessarily, include all those strategic actions needed to ensure its proper ranking on search engine results. Usually, those tasks pertain to a different specialization, namely search engine optimization (SEO)
+					<br>
+					Web development is also known as website development, while the professionals that maintain a website are called web developers or (more commonly) web devs.
+					<br>
+					Web development is the coding or programming that enables website functionality, per the owner's requirements. It mainly deals with the non-design aspect of building websites, which includes coding and writing markup.
+					<br>
+					Web development ranges from creating plain text pages to complex web-based applications, social network applications and electronic business applications.
+					Most web devs use Hypertext Markup Language (HTML), Cascading Style Sheets (CSS), and JavaScript to develop websites.
+					<br>
+					HTML defines the basic framework of a website – the foundation upon which everything else is built upon. It forms the blocks that define a page’s layout, format, and critical components. Although it is theoretically possible to code a website on HTML only, it will be just a barebone site with no functions unless it’s enriched with CSS and JavaScript. Also, even simple style modifications such as changing the color of a button require a lot of coding to be executed using HTML only.
+					<br>
+					CSS is used to style the content of a website using a small set of files that are kept across the entire site. This way, whenever a change must be applied to say, consistently change the color of all the buttons found in every page of the website, a web dev needs to edit only a single file in CSS.
+					<br>
+					The JavaScript programming language is used to take care of the interactivity of many unique website elements. It can be used to create effects that alter the appearance of icons and drop-down menus, add animations, games, and other interactive elements.
+				</div>
+				
+			</div>
+		</div>
+
+		<div id="leftcolumn">
+			<div class="innertext">
+				<b style="color: black; font-weight: bold;">HTML info</b><br>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+			</div>
+		</div>
+
+		<div id="rightcolumn">
+			<div class="innertext">
+				<b style="color: black; font-weight: bold;">CSS info</b><br>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation haracteristics.
+			</div>
+		</div>
+		
+		<div id="footer">Footer</div>
+
+	</div>
+
+</body>
+</html>
