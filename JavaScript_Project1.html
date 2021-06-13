@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript Exercise</title>
+	<style type="text/css">
+		h1{
+			font-family: Cursive;
+		}
+	</style>
+</head>
+<body>
+
+	<h1 align="center">Refresh this page!</h1>
+	<script type="text/javascript">
+		
+		var bgcolor=new Array("#029FD4","#1EFF00","#EAEAFF","#FFEA00","#AB5252","#FFFFFF","#F0F8FF","#FAEBD7","#00FFFF","#7FFFD4","#F0FFFF","#F5F5DC","#FFE4C4","#5F9EA0","#D26991E");
+		var a=bgcolor[Math.floor(Math.random()*bgcolor.length)];
+		var b=bgcolor[Math.floor(Math.random()*(bgcolor.length))];
+		if (a==b) {
+			document.body.style.background=bgcolor[Math.ceil(Math.random()*bgcolor.length)];
+			document.body.style.color=bgcolor[Math.floor(Math.random()*(bgcolor.length))];
+		}
+		else{
+			document.body.style.background=a;
+			document.body.style.color=b;
+		}
+
+
+	</script>
+
+</body>
+</html>
