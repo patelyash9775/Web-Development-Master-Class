@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS Web Page</title>
+    <style type="text/css">
+      body {
+        background: #222;
+        margin-top: 20px;
+        font-family: cursive;
+        color: white;
+      }
+
+      .thumbnails img {
+        height: 80px;
+        border: 4px solid #555;
+        padding: 1px;
+        margin: 0 10px 10px 0;
+      }
+
+      .thumbnails img:hover {
+        border: 4px solid #0000ff;
+      }
+
+      .preview img {
+        border: 4px solid #444;
+        padding: 1px;
+        width: 800px;
+      }
+
+      @media (max-width: 600px) {
+        .thumbnails img {
+          display: inline;
+          width: 100px;
+          height: 100px;
+          margin: 15px;
+        }
+        .preview img {
+          width: 250px;
+          height: 260px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container" align="center">
+      <h1>My Web Page Gallery</h1>
+
+      <br />
+
+      <div class="thumbnails">
+        <img onmouseover="preview.src=img1.src" name="img1" src="" id="img1" />
+        <img
+          onmouseover="preview.src = img2.src"
+          name="img2"
+          src=""
+          id="img2"
+        />
+        <img
+          onmouseover="preview.src = img3.src"
+          name="img3"
+          src=""
+          id="img3"
+        />
+        <img
+          onmouseover="preview.src = img4.src"
+          name="img4"
+          src=""
+          id="img4"
+        />
+      </div>
+
+      <br />
+      <br />
+
+      <div class="preview" align="center">
+        <img name="preview" src="" />
+      </div>
+
+      <h1>** Refresh this page and get new images **</h1>
+    </div>
+
+
+    <script type="text/javascript">
+      var a =
+        "https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg";
+      var b =
+        "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg";
+      var c =
+        "https://cdn.pixabay.com/photo/2016/01/08/11/57/butterflies-1127666__340.jpg";
+      var d =
+        "https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567__340.jpg";
+      var e =
+        "https://cdn.pixabay.com/photo/2018/09/23/18/30/drop-3698073__340.jpg";
+      var f =
+        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg";
+      var g =
+        "https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg";
+      var h =
+        "https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297__340.jpg";
+      var i =
+        "https://cdn.pixabay.com/photo/2018/01/22/14/13/animal-3099035__340.jpg";
+      var j =
+        "https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171__340.jpg";
+      var k =
+        "https://cdn.pixabay.com/photo/2013/07/18/10/56/railroad-163518__340.jpg";
+      var l =
+        "https://cdn.pixabay.com/photo/2015/03/22/23/07/bora-bora-685303__340.jpg";
+      var m =
+        "https://cdn.pixabay.com/photo/2018/04/16/16/16/sunset-3325080__340.jpg";
+      var n =
+        "https://cdn.pixabay.com/photo/2018/01/05/22/48/couple-3064048__340.jpg";
+      var o =
+        "https://cdn.pixabay.com/photo/2017/02/01/22/02/mountain-landscape-2031539__340.jpg";
+      var p =
+        "https://cdn.pixabay.com/photo/2016/11/14/04/45/elephant-1822636__340.jpg";
+      var q =
+        "https://cdn.pixabay.com/photo/2017/05/08/13/15/bird-2295431__340.jpg";
+
+      var rand_img = new Array(
+        a,
+        b,
+        c,
+        d,
+        e,
+        f,
+        g,
+        h,
+        i,
+        j,
+        k,
+        l,
+        m,
+        n,
+        o,
+        p,
+        q
+      );
+      var rand = Math.random();
+      var length = rand_img.length;
+      var t = Math.floor(rand*length);
+      var img1 = rand_img[t];
+      if((t-1)==0)
+      {
+        t=length;
+      }
+      var img2 = rand_img[t-1];
+      if((t-2)==0)
+      {
+        t=length+1;
+      }
+      var img3 = rand_img[t-2];
+      if((t-3)==0)
+      {
+        t=length+2;
+      }
+      var img4 = rand_img[t-3];
+      document.getElementById("img1").src = img1;
+      document.getElementById("img2").src = img2;
+      document.getElementById("img3").src = img3;
+      document.getElementById("img4").src = img4;
+    </script>
+  </body>
+</html>
