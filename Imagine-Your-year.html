@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Imagine-Your-year</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		
+		body{
+			background: #222;
+			margin-top: 20px;
+			font-family: cursive;
+			color: white;
+		}
+
+		td{
+			padding: 15px;
+		}
+
+		form{
+			font-size: 20px;
+		}
+
+		input[type=text]{
+
+			font-family: arial;
+			font-weight: bold;
+		}
+
+		input[type="button"]
+		{
+			font-size: 20px;
+			font-weight: bold;
+			border: 2px solid #FFE4C4;
+			border-radius: 10px;
+			text-align: center;
+			vertical-align: center;
+		}
+
+		@media(max-width: 600px)
+		{
+			h1{
+				font-size: 25px;
+			}
+
+			form{
+			font-size: 15px;
+			}
+
+			input[type="button"]{
+			font-size: 15px;
+			font-weight: bold;
+			border: 2px solid red;
+			border-radius: 7px;
+		    }
+
+		    input[type=text]{
+
+			font-size: 12px;
+			font-family: arial;
+			font-weight: bold;
+			}
+
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		
+		function cyears(form) {
+			form.dogage.value = form.myage.value*7;
+		}
+
+	</script>
+</head>
+<body>
+
+	<div id="container" align="center">
+		<h1>Find out your age in dog years!</h1>
+		<br>
+		<form method="post">
+
+			<table>
+		
+				<tr>
+					<td>Enter your age :- </td>
+					<td><input type="text" name="myage" size="15"></td>
+				</tr>
+				<tr align="center">
+					<td>
+						<input type="button" value="Calculate" onclick="cyears(this.form)">
+					</td>
+				</tr>
+				<tr>
+					<td>Your age in Dog Years is :- </td>
+					<td><input type="text" name="dogage" size="15"></td>
+				</tr>
+			</table>
+
+		</form>
+
+	</div>
+
+</body>
+</html>
