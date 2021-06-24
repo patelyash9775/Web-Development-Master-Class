@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+			$("#p1").mouseenter(function() {
+				alert("Your Mouse entered paragraph");
+			});
+		});
+	</script>
+
+	<style type="text/css">
+		#p1{
+			text-align: center;
+			background-color: #222;
+			font-family: cursive;
+			border: 2px blue solid;
+			border-radius: 5px;
+			font-size: 25px;
+			width: 50%;
+			color: white;
+			font-weight: bold;
+		}
+
+		body{
+			background-color: #444;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div align="center">
+		<p id="p1">Hello Everyone!</p>
+	</div>
+</body>
+</html>

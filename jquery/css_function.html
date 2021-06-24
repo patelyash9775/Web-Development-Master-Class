@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+			$("button").click(function() {
+
+				$("#square").css("background","red")
+						.slideUp(2000)
+						.slideDown(2000);
+
+			});
+
+		});
+	</script>
+
+	<style type="text/css">
+		
+		#square{
+			background-color: blue;
+			height: 160px;
+			width: 160px;
+			position: absolute;
+			border: 2px solid red;
+			top: 150px;
+
+		}
+		.head{
+			color: white;
+		}
+
+		body{
+			background-color: #444;
+		}
+
+		button{
+			font-size: 20px;
+			padding: 7px;
+			font-weight: bold;
+			border: 2px solid red;
+			border-radius: 5px; 
+		}
+
+		@media(max-width: 600px){
+
+			#square{
+			background-color: blue;
+			height: 80px;
+			width: 80px;
+			position: absolute;
+			border: 2px solid red;
+			top: 190px;
+
+		}
+
+		}
+
+	</style>
+
+</head>
+<body>
+	<div align="center">
+		<h1 class="head">Let's do Something New!</h1>
+
+		<button>Animate</button>
+		<div id="square"></div>
+
+	</div>
+</body>
+</html>
