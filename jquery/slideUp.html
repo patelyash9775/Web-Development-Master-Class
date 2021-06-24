@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+			$("#topbar").click(function() {
+
+				$("#panel").slideUp(1000);
+				
+			});
+
+		});
+	</script>
+
+	<style type="text/css">
+		
+		#panel,#topbar{
+			width: 160px;
+			height: 160px;
+			padding: 5px;
+			background-color: red;
+			border: 2px solid white;
+			font-size: 20px;
+		}
+
+		#panel{
+			padding: 80px;
+
+		}
+
+		body{
+			background-color: #444;
+		}
+
+		.head{
+			color: white;
+		}
+
+		@media(max-width: 600px){
+
+			#panel,#topbar{
+			width: 80px;
+			height: 80px;
+		}
+
+		}
+
+	</style>
+
+</head>
+<body>
+	<div align="center">
+		<h1 class="head">Let's do Something New!</h1>
+
+		<div id="topbar"><button>Hide Panel</button></div>
+		<div id="panel">This is a panel with sample content</div>
+
+	</div>
+</body>
+</html>

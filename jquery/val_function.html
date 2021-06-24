@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+			$("button").click(function() {
+
+					alert($("#name").val());
+			});
+
+		});
+	</script>
+
+	<style type="text/css">
+		
+		p{
+			color: white;
+			font-size: 20px;
+		}
+
+		body{
+			background-color: #444;
+		}
+
+		button{
+			font-size: 20px;
+			padding: 7px;
+			font-weight: bold;
+			border: 2px solid red;
+			border-radius: 5px; 
+		}
+
+		
+	</style>
+
+	
+
+</head>
+<body>
+	<div align="center">
+		
+		<p><input type="text" id="name" value="John Smith"></p>
+
+
+		<button>Get Value</button>		
+
+	</div>
+</body>
+</html>
