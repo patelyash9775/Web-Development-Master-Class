@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Carousel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+ 
+  <style>
+  .carousel-inner > .item > img {
+      margin: auto;
+      width: 625px;
+      height: 625px;
+  }
+  body{
+    background-color: #F0FFFF;
+  }
+  h1{
+    color: #222;
+    font-family: cursive;
+  }
+
+  @media(max-width: 600px)
+  {
+
+  .carousel-inner > .item > img {
+      margin: auto;
+      width: 220px;
+      height: 245px;
+  }
+
+  }
+  </style>
+ 
+</head>
+<body>
+
+<div class="container">
+  <br>
+  <div align="center">
+      <h1>*Best Friends*</h1>
+  </div>
+  <br>
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+    
+  <!-- Carousel Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel" data-slide-to="1" ></li>
+      <li data-target="#carousel" data-slide-to="2"></li>
+      <li data-target="#carousel" data-slide-to="3"></li>
+      <li data-target="#carousel" data-slide-to="4"></li>
+      <li data-target="#carousel" data-slide-to="5"></li>
+      <li data-target="#carousel" data-slide-to="6"></li>
+      <li data-target="#carousel" data-slide-to="7"></li>
+      <li data-target="#carousel" data-slide-to="8"></li>
+    </ol>
+
+    <!-- Wrapper for Slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="img/yash.jpg" width="450" height="340">
+        <div class="carousel-caption">
+          <h3>Yash</h3>
+          <p>All Rounder</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img/nishan.jpg" width="450" height="340">
+        <div class="carousel-caption">
+          <h3>Nishan</h3>
+          <p>Ethical Hacker</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="img/pritesh.jpg" width="450" height="340">
+        <div class="carousel-caption">
+          <h3>Pritesh</h3>
+          <p>Data analyst</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img/sonu.jpg" width="450" height="340">
+        <div class="carousel-caption">
+          <h3>Sonu</h3>
+          <p>Model</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img/pushti.jpg" width="450" height="340">
+        <div class="carousel-caption">
+          <h3>Pushti</h3>
+          <p>Data Analyst</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img/prince.jpg" width="450" height="340">
+        <div class="carousel-caption">
+          <h3>Prince</h3>
+          <p>Cricketer</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img/vrund.jpg" width="450" height="340">
+        <div class="carousel-caption">
+          <h3>Vrund</h3>
+          <p>Insta Reel Master</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img/vivek.jpg" width="450" height="340">
+        <div class="carousel-caption">
+          <h3>Vivek</h3>
+          <p>Bussinessman</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img/himanshi.jpg" width="450" height="340">
+        <div class="carousel-caption">
+          <h3>Himanshi</h3>
+          <p>Writer</p>
+        </div>
+      </div>
+     
+  
+    </div>
+
+    <!-- Left and Right Control Links -->
+    <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
